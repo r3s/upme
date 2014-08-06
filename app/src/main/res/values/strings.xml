@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UpMe</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="choose_image">Choose image</string>
+    <string name="views">Views</string>
+    <string name="resize">Resize?</string>
+    <string name="goback">&lt;   Back</string>
+    <string name="result_fail">Upload failed. Please go back and try again.</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_result_success">Success</string>
+    <string name="title_activity_result_failure">Failed</string>
+    <string name="title_activity_history">History</string>
+    <string name="settings_clear_history_title">Clear History</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+
+</resources>

@@ -1,0 +1,11 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="pref_save_history"
+        android:title="@string/settings_save_history_title"
+        android:summary="@null"
+        android:defaultValue="true" />
+
+
+
+</PreferenceScreen>

@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.novytes.upme.app.MainActivity"
+
+        >
+
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:id="@+id/main_bg"
+               android:scaleType="centerCrop"
+            />
+
+
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:layout_marginTop="120dp"
+                  android:id="@+id/image_selection_layout"
+                  android:background="@drawable/dark_btn_drawable"
+            >
+
+        <Button android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:id="@+id/btn_choose_image"
+                android:background="@drawable/choose_button"
+                />
+
+        <TextView
+                android:id="@+id/choose_image_text"
+                android:text="@string/choose_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                />
+
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_below="@+id/image_selection_layout"
+                  android:layout_marginTop="40dp"
+                  android:id="@+id/options_layout"
+                  android:padding="20dp"
+                  android:background="@drawable/dark_btn_drawable"
+            >
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center"
+                      android:layout_weight="1"
+                      android:layout_marginRight="10dp"
+                >
+            <Button
+                    android:id="@+id/view_limit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/grey_button"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:text="5"
+                    />
+            <TextView
+                    android:id="@+id/num_views_text"
+                    android:text="@string/views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    />
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_gravity="center"
+                      android:layout_weight="1"
+                      android:layout_marginLeft="10dp"
+                >
+
+            <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:background="@drawable/grey_button"
+                    android:id="@+id/resize_checkbox"/>
+
+            <TextView
+                    android:id="@+id/resize_text"
+                    android:text="@string/resize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#FFFFFF"
+                    />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button android:id="@+id/upload_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/options_layout"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/upload_button"
+            />
+
+    <ProgressBar android:id="@+id/progress_bar"
+                 android:layout_width="100dp"
+                 android:layout_height="100dp"
+                 android:layout_centerHorizontal="true"
+                 android:layout_below="@id/options_layout"
+                 android:layout_marginTop="40dp"
+
+            />
+
+    <Button android:id="@+id/history_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/history_button"
+            />
+
+</RelativeLayout>

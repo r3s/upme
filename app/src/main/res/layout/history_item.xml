@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="5dp"
+        >
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/item_layout"
+            android:background="@android:color/transparent">
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="4"
+                      android:orientation="vertical"
+                >
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:id="@+id/url"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:text="Hello World"/>
+
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:id="@+id/local_path"
+                    android:textSize="10sp"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="normal"
+                    android:text="Hello World"/>
+
+        </LinearLayout>
+
+        <!-- this is the button that will trigger sliding of the expandable view -->
+        <Button
+                android:id="@+id/expandable_toggle_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="..."
+                android:drawableRight="@drawable/ic_expand"
+                android:background="@android:color/transparent"
+                />
+
+    </LinearLayout>
+
+    <!-- this is the expandable view that is initially hidden and will slide out when the more button is pressed -->
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:id="@+id/expandable"
+            android:background="@android:color/transparent">
+
+        <!-- put whatever you want in the expandable view -->
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:layout_weight="1"
+                      android:orientation="vertical"
+                >
+
+            <Button android:id="@+id/btn_delete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:background="@drawable/delete_button" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_weight="1">
+            <Button android:id="@+id/btn_share"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/share_button" />
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="0dp"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_weight="1">
+            <Button android:id="@+id/btn_copy"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:background="@drawable/copy_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+</LinearLayout>

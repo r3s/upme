@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.novytes.upme.app.ResultSuccessActivity">
+
+
+    <ImageView android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:id="@+id/main_bg"
+               android:scaleType="centerCrop"
+            />
+
+    <TextView
+            android:id="@+id/fail_text"
+            android:text="@string/result_fail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:layout_centerHorizontal="true"
+            android:padding="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:background="@drawable/medium_light_btn_drawable"
+            />
+
+
+    <Button android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/fail_text"
+            android:layout_marginTop="30dp"
+            android:text="@string/goback"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp"
+            android:background="@drawable/dark_btn_drawable"
+            />
+
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_example</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Transparent.Example</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="ActionBar.Transparent.Example" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="android:background">@drawable/ab_transparent_example</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:titleTextStyle">@style/MyTextAppearance</item>
+    </style>
+
+    <style name="MyTextAppearance"  parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="MyCustomBetterPickerTheme">
+        <item name="bpDialogBackground">@drawable/medium_light_btn_drawable</item>
+        <item name="bpTextColor">@color/custom_text_color_normal</item>
+        <item name="bpDeleteIcon">@drawable/ic_backspace_normal_custom</item>
+        <item name="bpCheckIcon">@drawable/ic_check_normal_custom</item>
+        <item name="bpKeyBackground">@drawable/key_background_light</item>
+        <item name="bpButtonBackground">@drawable/button_background_light</item>
+        <item name="bpDividerColor">@color/custom_divider_color</item>
+        <item name="bpKeyboardIndicatorColor">@color/custom_keyboard_indicator_color</item>
+    </style>
+
+</resources>
